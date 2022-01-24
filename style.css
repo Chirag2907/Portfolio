@@ -1,6 +1,6 @@
-
-
-*{font-family: 'Montserrat', sans-serif;}
+* {
+  font-family: "Montserrat", sans-serif;
+}
 
 body {
   background-image: url("img/bg.jpg");
@@ -50,11 +50,11 @@ a:hover {
   position: absolute;
   right: 6rem;
   z-index: -1;
-    height: 44rem;
+  height: 44rem;
 }
-.images{
-    height: 10rem;
-    width: 20rem;
+.images {
+  height: 10rem;
+  width: 20rem;
 }
 .here {
   color: rgb(255, 98, 98);
@@ -178,125 +178,122 @@ button:hover {
   text-align: center;
 }
 
-.orange{
-    color: #dd7732;
+.orange {
+  color: #dd7732;
 }
 
-.bar{
-    border: crimson solid 2px;
-    background-color: #b88767;
-    width: 25rem !important;
-    height: 1.5rem;
-    border-radius: 0.5rem;
-    text-align: right;
-    right: 0;
-    font-size: 1.5rem;
-    color: black;
+.bar {
+  border: crimson solid 2px;
+  background-color: #b88767;
+  width: 25rem !important;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: right;
+  right: 0;
+  font-size: 1.5rem;
+  color: black;
 }
-.bar div{
-    background-color: crimson;
-    width: 0;
-    height: 1.5rem;
-    border-radius: 0.5rem;
-    transition: width 0.5s;
+.bar div {
+  background-color: crimson;
+  width: 0;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  transition: width 0.5s;
 }
 
 #html-bar {
-    animation: html-fill 2s forwards;
+  animation: html-fill 2s forwards;
 }
-@keyframes html-fill{
-    100% {
-        width: 80%;
-    }
+@keyframes html-fill {
+  100% {
+    width: 80%;
+  }
 }
 #css {
-    animation: css 2s forwards;
+  animation: css 2s forwards;
 }
-@keyframes css{
-    100% {
-        width: 70%;
-    }
+@keyframes css {
+  100% {
+    width: 70%;
+  }
 }
 #js {
-    animation: js 2s forwards;
+  animation: js 2s forwards;
 }
-@keyframes js{
-    100% {
-        width: 50%;
-    }
+@keyframes js {
+  100% {
+    width: 50%;
+  }
 }
 #py {
-    animation: py 2s forwards;
+  animation: py 2s forwards;
 }
-@keyframes py{
-    100% {
-        width: 80%;
-    }
+@keyframes py {
+  100% {
+    width: 80%;
+  }
 }
 #cpp {
-    animation: cpp 2s forwards;
+  animation: cpp 2s forwards;
 }
-@keyframes cpp{
-    100% {
-        width: 90%;
-    }
+@keyframes cpp {
+  100% {
+    width: 90%;
+  }
 }
 #react {
-    animation: react 2s forwards;
+  animation: react 2s forwards;
 }
-@keyframes react{
-    100% {
-        width: 60%;
-    }
+@keyframes react {
+  100% {
+    width: 60%;
+  }
 }
 #node {
-    animation: node 2s forwards;
+  animation: node 2s forwards;
 }
-@keyframes node{
-    100% {
-        width: 50%;
-    }
+@keyframes node {
+  100% {
+    width: 50%;
+  }
 }
 #dj {
-    animation: dj 2s forwards;
+  animation: dj 2s forwards;
 }
-@keyframes dj{
-    100% {
-        width: 40%;
-    }
+@keyframes dj {
+  100% {
+    width: 40%;
+  }
 }
 #next {
-    animation: next 2s forwards;
+  animation: next 2s forwards;
 }
-@keyframes next{
-    100% {
-        width: 60%;
-    }
-}
-
-
-@media(max-width: 768px){
-    html{
-        font-size: 45%;
-    }
-    .cards {
-        grid-template-columns: 1fr 1fr ;
-    }
-    .two {
-        grid-template-columns: 1fr;
-    }
-    .bar{
-        width: 100%;
-    }
-    .images{
-        height: 10rem;
-        width: 17rem;
-    }
-    .image{
-        position: relative;
-        top:5rem;
-        left: 10rem;
-    }
+@keyframes next {
+  100% {
+    width: 60%;
+  }
 }
 
-
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .two {
+    grid-template-columns: 1fr;
+  }
+  .bar {
+    width: 100%;
+  }
+  .images {
+    height: 10rem;
+    width: 17rem;
+  }
+  .image {
+    position: relative;
+    top: 5rem;
+    left: 10rem;
+  }
+}
