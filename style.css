@@ -1,87 +1,95 @@
-body{
-    background-image: url("img/bg.jpg");
+body {
+  background-image: url("img/bg.jpg");
 }
-.navbar{
-    position: fixed;
-    width: 100%;
-    top: 10;
-    background-color: rgba(110, 110, 110, 0);
-    z-index: 1;
-}
-span{
-    color: white;
-    font-size: 40px;
-}
-.head{
-    color: rgb(255, 98, 98);
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 10;
+  background-color: rgba(110, 110, 110, 0);
+  z-index: 10;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 3fr 0.7fr 0.8fr 0.7fr;
-    gap: 1rem;
-    padding: 20px;  
-    border: 1px;
-    margin-right: 5rem;
-    place-items: center;
-
+span {
+  color: white;
+  font-size: 40px;
 }
-.grid span{
-    align-items: left !important;
-    margin-left: 3rem;
+.head {
+  color: rgb(255, 98, 98);
+  font-size: 60px;
 }
 
-
-a{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 0.7fr 0.8fr 0.7fr;
+  gap: 1rem;
+  padding: 20px;
+  border: 1px;
+  margin-right: 5rem;
+  place-items: center;
 }
-a:hover{
-    color: rgb(255, 98, 98);
-}
-.image{
-    position: absolute;
-    right:6rem;
-    z-index: -1;
-}
-.here{
-    color:rgb(255, 98, 98)
+.grid span {
+  align-items: left !important;
+  margin-left: 3rem;
 }
 
-.main{
-    position: relative;
-    top: 10rem;
-    left: 10rem;
-    width: 80%;
-    height: 80%;    
-    padding: 20px;
-    color: white;
-    font-size: 2rem;
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.mains{
-    top: 2rem;
-    position: relative;
-    left:1rem;
-    width: 80%;
-    height: 80%;    
-    padding: 20px;
-    color: rgb(168, 159, 159);
-    font-size: 2rem;
+a:hover {
+  color: rgb(255, 98, 98);
+}
+.image {
+  position: absolute;
+  right: 6rem;
+  z-index: -1;
+}
+.here {
+  color: rgb(255, 98, 98);
 }
 
-.card h3{
-    color:#e0a075
+.main {
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
+}
+.mains {
+  top: 2rem;
+  position: relative;
+  left: 1rem;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  color: rgb(168, 159, 159);
+  font-size: 2rem;
+  /* z-index: -1; */
 }
 
-.heading{
-    top: 5rem;
-    padding: 20px;
-    margin-left:40%;
+.card h3 {
+  color: #e0a075;
 }
-.content{
-    color:rgb(212, 163, 163)
+
+.heading {
+  top: 5rem;
+  padding: 20px;
+  margin-left: 45%;
+}
+.sheading {
+  top: 5rem;
+  padding: 20px;
+  margin-left: 50%;
+}
+.content {
+  color: rgb(212, 163, 163);
+  font-size: 1.3rem;
 }
 
 .container p {
@@ -104,32 +112,156 @@ a:hover{
   animation: none;
 }
 @keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
-.center{
-    top: 4rem;
-    margin: 0 23rem;
+.center {
+  top: 4rem;
+  margin: 0 23rem;
 }
-button{
-    background-color: crimson;
-    padding: 1rem;
+button {
+  background-color: crimson;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  width: 10rem;
+}
+button:hover {
+  background-color: rgb(255, 98, 98);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.cards img {
+  border-radius: 1rem;
+  border: dotted;
+  border-color: rgb(158, 158, 158);
+}
+.card {
+  text-align: center;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+  place-items: center;
+  text-align: center;
+}
+
+.orange{
+    color: #dd7732;
+}
+
+.bar{
+    border: crimson solid 2px;
+    background-color: #b88767;
+    width: 25rem !important;
+    height: 1.5rem;
     border-radius: 10px;
-    color: white;
-    width: 10rem;
+    text-align: right;
+    right: 0;
+    font-size: 1.5rem;
+    color: black;
 }
-button:hover{
-    background-color: rgb(255, 98, 98);
+.bar div{
+    background-color: crimson;
+    width: 0;
+    height: 1.5rem;
+    border-radius: 10px;
+    transition: width 0.5s;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    padding: 2rem;
-    margin-top: 2rem;
-
+#html-bar {
+    animation: html-fill 2s forwards;
 }
+@keyframes html-fill{
+    100% {
+        width: 80%;
+    }
+}
+#css {
+    animation: css 2s forwards;
+}
+@keyframes css{
+    100% {
+        width: 70%;
+    }
+}
+#js {
+    animation: js 2s forwards;
+}
+@keyframes js{
+    100% {
+        width: 50%;
+    }
+}
+#py {
+    animation: py 2s forwards;
+}
+@keyframes py{
+    100% {
+        width: 80%;
+    }
+}
+#cpp {
+    animation: cpp 2s forwards;
+}
+@keyframes cpp{
+    100% {
+        width: 90%;
+    }
+}
+#react {
+    animation: react 2s forwards;
+}
+@keyframes react{
+    100% {
+        width: 60%;
+    }
+}
+#node {
+    animation: node 2s forwards;
+}
+@keyframes node{
+    100% {
+        width: 50%;
+    }
+}
+#dj {
+    animation: dj 2s forwards;
+}
+@keyframes dj{
+    100% {
+        width: 40%;
+    }
+}
+#next {
+    animation: next 2s forwards;
+}
+@keyframes next{
+    100% {
+        width: 60%;
+    }
+}
+
